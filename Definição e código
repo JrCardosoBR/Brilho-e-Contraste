@@ -1,0 +1,28 @@
+------------------ Codigo Escolhido -----------------------------------
+#contraste e brilho
+img_in = cv2.imread('data/t1.jpg',0)
+a = -1
+b = 1
+
+img_out = a*img_in + b
+
+img_out = np.array(img_out, dtype = np.uint8)
+
+cv2_imshow(img_in)
+cv2_imshow(img_out)
+'''
+cv2.imshow('in', img_in)
+cv2.waitKey(0)
+cv2.imshow('out', img_out)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+'''
+------------------ Codigo Escolhido -----------------------------------
+
+Oque Faz?: Ele altera as propriedades do brilho e contraste da imagem desejada, as deixando mais escuras/claras ou com menos/mais contraste.
+
+Como Faz?: Primeiro ele começa carregando a imagem do repositorio selecionado, definido como img_in (img_in = cv2.imread), Se a imagem não puder ser lida 
+(por causa de arquivo ausente, permissões impróprias, formato não suportado ou inválido), esse método retornará uma matriz vazia. Logo em seguida ele estabelece
+os valores a e b que é responsavel pelo Brilho e Contraste, depois ele começa a definir a segunda imagem, que sera modificada o brilho e contraste 
+(img_out = a*img_in + b), apos isso ele ja começa a processar o Array (matriz) com o NumPy (np.array) definindo o tipo de retorno de dado (dtype = np.uint8), 
+finalizando o processo ele mostra as imagens antes (cv2_imshow(img_in)) e depois (cv2_imshow(img_out)) do processo de alteração de brilho e contraste.
