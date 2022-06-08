@@ -27,3 +27,6 @@ Como Faz?: Primeiro ele começa carregando a imagem do repositorio selecionado, 
 os valores a e b que é responsavel pelo Brilho e Contraste, depois ele começa a definir a segunda imagem, que sera modificada o brilho e contraste 
 (img_out = a*img_in + b), apos isso ele ja começa a processar o Array (matriz) com o NumPy (np.array) definindo o tipo de retorno de dado (dtype = np.uint8), 
 finalizando o processo ele mostra as imagens antes (cv2_imshow(img_in)) e depois (cv2_imshow(img_out)) do processo de alteração de brilho e contraste.
+
+E Tudo isso funciona graças a linguagem python, mais especificamente o OpenCV Python, que é uma biblioteca de ligações Python projetadas para resolver problemas 
+de visão computacional.
