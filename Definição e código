@@ -19,7 +19,8 @@ cv2.destroyAllWindows()
 '''
 ------------------ Codigo Escolhido -----------------------------------
 
-Oque Faz?: Ele altera as propriedades do brilho e contraste da imagem desejada, as deixando mais escuras/claras ou com menos/mais contraste.
+Oque Faz?: Ele altera as propriedades do brilho e contraste da imagem desejada, as deixando mais escuras/claras ou com menos/mais contraste, ele é muito utilizado quando
+é necessario clarear ou escurecer uma imagem determinada, alterar o contraste para melhorar a qualidade da imagem e etc...
 
 Como Faz?: Primeiro ele começa carregando a imagem do repositorio selecionado, definido como img_in (img_in = cv2.imread), Se a imagem não puder ser lida 
 (por causa de arquivo ausente, permissões impróprias, formato não suportado ou inválido), esse método retornará uma matriz vazia. Logo em seguida ele estabelece
